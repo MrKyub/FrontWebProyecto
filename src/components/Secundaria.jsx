@@ -10,8 +10,8 @@ import withReactContent from 'sweetalert2-react-content';
 
 function Secundaria() {
 
-  const { data, isLoading, error } = useFetch('https://localhost:7259/Colegio/api/Carrera/ObtenerCarreras');
-  const createUserRequest = usePostFetch('https://localhost:7259/Colegio/api/Carrera/AgregarCarrera', 'POST');
+  const { data, isLoading, error } = useFetch('https://backproyectoalex.azurewebsites.net/Colegio/api/Carrera/ObtenerCarreras');
+  const createUserRequest = usePostFetch('https://backproyectoalex.azurewebsites.net/Colegio/api/Carrera/AgregarCarrera', 'POST');
 
   const [createModal, setCreateModal] = useState(false);
 

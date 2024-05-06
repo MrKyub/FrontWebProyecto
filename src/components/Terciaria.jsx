@@ -9,8 +9,8 @@ import withReactContent from 'sweetalert2-react-content';
 
 function Terciaria() {
 
-    const { data, isLoading, error } = useFetch('https://localhost:7259/Colegio/api/Docente/ObtenerDocentes');
-    const createUserRequest = usePostFetch('https://localhost:7259/Colegio/api/Docente/AgregarDocente', 'POST');
+    const { data, isLoading, error } = useFetch('https://backproyectoalex.azurewebsites.net/Colegio/api/Docente/ObtenerDocentes');
+    const createUserRequest = usePostFetch('https://backproyectoalex.azurewebsites.net/Colegio/api/Docente/AgregarDocente', 'POST');
 
     const [createModal, setCreateModal] = useState(false);
 

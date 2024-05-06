@@ -8,8 +8,8 @@ import withReactContent from 'sweetalert2-react-content';
 
 function Principal() {
 
-    const { data, isLoading, error } = useFetch('https://localhost:7259/Colegio/api/Alumno/ObtenerAlumnosFiltro');
-    const createUserRequest = usePostFetch('https://localhost:7259/Colegio/api/Alumno/AgregarAlumnos', 'POST');
+    const { data, isLoading, error } = useFetch('https://backproyectoalex.azurewebsites.net/Colegio/api/Alumno/ObtenerAlumnosFiltro');
+    const createUserRequest = usePostFetch('https://backproyectoalex.azurewebsites.net/Colegio/api/Alumno/AgregarAlumnos', 'POST');
 
     const [createModal, setCreateModal] = useState(false);
 
